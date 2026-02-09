@@ -7,7 +7,7 @@ const {
 module.exports = {
   apps : [
     {
-    name   : "name",
+    name   : "app",
     script : "dist/app.js",
     env: { NODE_ENV: "development" },  // Для default или --env development
     env_production: {  // Обязательно для --env production

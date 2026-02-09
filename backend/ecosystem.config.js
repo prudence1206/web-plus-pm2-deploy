@@ -8,7 +8,12 @@ module.exports = {
   apps : [
     {
     name   : "name",
-    script : "dist/app.js"
+    script : "dist/app.js",
+    env: { NODE_ENV: "development" },  // Для default или --env development
+    env_production: {  // Обязательно для --env production
+      NODE_ENV: "production"
+      // Добавьте другие vars, напр. PORT: 3000, если нужно
+    }
   }
 ],
  deploy: {
